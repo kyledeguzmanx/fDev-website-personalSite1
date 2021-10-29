@@ -1,0 +1,211 @@
+/*
+symbol html codes: https://www.toptal.com/designers/htmlarrows/punctuation/bullet/
+
+div.class-name VS CODE SHORTCUT 
+     creates <div class="class-name"></div>
+
+twitter feed embed 
+<a class="twitter-timeline" data-width="600" data-height="500" href="https://twitter.com/csunorthridge?ref_src=twsrc%5Etfw">Tweets by csunorthridge</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+COLOR PALETTE -- I chose purple because my tie in the picture is purple
+
+#eae9f2 -- whitish purple
+#e0dfe8 -- silverish purple
+#000 -- Black font
+#2204cf -- vivid bright purple
+#d6cae3 -- pastel, light purple
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap'); 
+/*font-family: 'Permanent Marker', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&display=swap');
+/*font-family: 'Anton', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Rajdhani:wght@300&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Rajdhani:wght@300&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+/*font-family: 'Teko', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@200&family=Viga&display=swap');
+/***font-family: 'Alumni Sans', sans-serif;**/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
+/*font-family: 'Quicksand', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,300&display=swap');
+
+html,body{
+    width:100%;
+    height: 100%;
+    margin:0;
+    background-color:#eae9f2;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    }
+     
+nav {
+    margin: 0px;
+    padding: 0;
+    width: 15%;
+    background-color:#e0dfe8;
+    font-family: 'Rajdhani', sans-serif;
+    position: fixed;
+    height: 100%;
+    overflow:auto; /*Basically, if space isn't big enough to display all text and it spills out of box, we want to hide it and make it scrollable*/
+   
+   
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+  }
+  
+  nav a {
+    display: block;
+    color: #000;
+    padding: 1.3rem 20px;
+    text-decoration: none;
+    font-size:1.23rem;
+  }
+  nav a:hover{
+      color: white;
+      background-color:#2204cf;
+  }
+  .content-wrap{ /*header wrap*/
+      max-width:950px; 
+      margin: 0 auto;
+      padding: 4rem;
+      overflow:hidden;
+      
+  }
+  .header-wrap{
+    display:flex;
+    flex-direction: row;
+    padding-top:3.5rem;
+  }
+  .header-text-container{
+      width: 60%;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+
+      position:relative;
+      left: 4.5rem; /*previously 6em*/
+  }
+  .header-text{
+      font-size:1.5rem;
+      font-family: 'Anton', sans-serif;
+      z-index:1;
+      color: #2204cf;
+  }
+
+  .header-image{ 
+      width:35rem;
+      height:40em;
+      overflow:hidden;
+      border-radius: 5%;
+  }  
+  .profile-img{/*previously header-image img*/
+      margin: -60px 30px 0px -110px;
+      filter:brightness(150%);
+      z-index: 1;
+
+  }
+  .body-color{
+      background-color:#d6cae3 ;
+
+  }
+  .body-content{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-indent: 4rem;
+  }
+  .body-location{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1rem;
+  }
+  .school-info{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    
+  }
+  h2{
+      margin-top: 0;
+  }
+  section h2{
+    font-family: 'Alumni Sans', sans-serif;
+    text-align:center;
+    font-size:4rem;
+  }
+  section h3{
+      font-family:'Alumni Sans', sans-serif;
+      font-size:1.5rem;
+  }
+  .column-narrow{
+      width:30%;
+      float:left;
+      padding-right:3%;
+      padding-left:9rem;
+      min-height: 175px;
+     
+  }
+  .column-wide{
+      width:70%;
+      float:left;
+      min-height:225px;
+      padding-left:3rem;
+      padding-top:1rem;
+      border-left: 2px solid black;
+
+  }
+
+footer{
+    background-color:#2204cf;
+    margin-left:15%;
+    color:white;
+    text-align: center;
+    padding-top:3rem;
+    padding-bottom:2rem;
+}
+footer hr{
+    width:70%;
+}
+footer h2{
+    font-family: 'Teko', sans-serif;
+    font-size:5em;
+    margin-bottom:-0.3em;
+}
+footer i{
+    font-size: 2rem;
+    padding: 1.5rem 1rem;
+}
+.contact-info a{ /*Previously footer a*/
+    color:white;
+    font-size: 1rem;
+}
+footer a:hover{
+    color:gray;
+}
+.contact-info{ /*Previously footer-social-container*/
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    padding-top:0rem;
+    padding-bottom:0rem;
+}
+.footer-social-row{
+    display:flex;
+    margin-top: -1rem;
+}
+.footer-social-row p{
+    position:relative;
+    top:1em;
+    margin-left:1rem;
+    padding-right:3rem;
+    color:white;
+}
+footer a {
+    text-decoration: none;
+}
